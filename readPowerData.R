@@ -16,11 +16,11 @@ classes<-c(rep("character",2), rep("numeric",7))
 power<-read.csv2("household_power2.txt", dec=".", header=FALSE, stringsAsFactors=FALSE, colClasses=classes)
 
 # get header row from original file and set column names 
-heading<-read.csv2("household_power_consumption.txt", header=FALSE, nrows=1)
-names(power2)<-heading
+heading<-read.csv2("household_power_consumption.txt", header=FALSE, stringsAsFactors=FALSE, nrows=1)
+colnames(power)<-heading[1,]
 
 # create datetime object from date and time strings
-datetime<-paste(power2$Date, power2$Time)
+datetime<-paste(power$Date, power$Time)
 datetime<-as.POSIXlt(datetime, format="%d/%m/%Y %H:%M:%S")
 
 
