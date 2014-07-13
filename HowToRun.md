@@ -1,10 +1,10 @@
 ## Required Files
 <ul>
-<li>**readPowerData.R** - this file reads the data file and is used by all the plot scripts
-<li>**plot1.R**
-<li>**plot2.R**
-<li>**plot3.R**
-<li>**plot4.R**
+<li><b>readPowerData.R</b> - this file reads the data file and is used by all the plot scripts
+<li><b>plot1.R</b>
+<li><b>plot2.R</b>
+<li><b>plot3.R</b>
+<li><b>plot4.R</b>
 </ul>
 
 Assuming the scripts and the data file are in your working directory you can enter the following command to create each plot:
